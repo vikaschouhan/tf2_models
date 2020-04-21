@@ -1,5 +1,5 @@
 # tf2_models
-This is a library which provides several tensorflow2 (keras) cnn models which are already available publicly via a single coherence api. Following models are supported right now.
+This is a library which provides several tensorflow2 (keras) cnn models (already available publicly) via a single coherent api. Following models are supported right now.
 - densenet169
 - densenet161
 - densenet201
@@ -36,4 +36,9 @@ This is a library which provides several tensorflow2 (keras) cnn models which ar
 import tf2_models
 init_fn = tf2_models.get_model_fn_map()
 model   = init_fn['densenet161'](num_classes=10)
+```
+
+# Model Api
+```
+model = model_init_fn(num_classes, input_shape)
 ```
